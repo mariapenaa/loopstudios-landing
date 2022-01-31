@@ -1,0 +1,131 @@
+@import '../../var';
+
+footer {
+    background-color: black;
+    height:20vh;
+    padding:0 10vw;
+    align-items:center;
+    margin-top:13rem;
+    .inner-container {
+        height:18vh;
+    }
+}
+
+.footer-list {
+    display:flex;
+    margin:0px;
+    flex-direction:row;
+    padding:0px;
+    li {
+        font-size:1.1rem;
+        margin-right:2.5rem;
+        list-style:none;
+        color:white;
+        font-family:$fontAlata;
+    }
+}
+
+.icon-list {
+    padding:0px;
+    margin:0px;
+    display:flex;
+    flex-direction:row;
+    li {
+        color:white;
+        margin:0px 0.5rem;
+        font-size:1.5rem;
+        list-style:none;
+        img {
+            width:2rem;
+        }
+    }
+
+}
+
+.copyright p {
+    color:grey;
+    font-family:$fontAlata;
+    font-size:1.1rem;
+}
+
+
+ul a {
+    cursor:pointer;
+    color: inherit;
+    text-decoration: none !important;
+    display: block;
+    position: relative;
+    padding: 0.2em 0;
+    visibility:none;
+  }
+  
+
+  /* Fade in */
+ul a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.1em;
+    background-color: white;
+    opacity: 0;
+    transition: opacity 300ms, transform 300ms;
+  }
+  
+ul a:hover::after,
+ul a:focus::after {
+    opacity: 1;
+
+    transform: translate3d(0, 0.2em, 0);
+  }
+  
+  /* Slide in */
+
+  
+  /* Scale from center */
+  li a::after {
+    opacity: 1;
+    transform: scale(0);
+    transform-origin: center;
+  }
+  
+  li a:hover::after,
+  li a:focus::after{
+    transform: scale(1);
+  }
+
+@media only screen and (max-width: 1080px) {
+    .footer-row {
+        flex-direction:column;
+        .col {
+            justify-content:center !important;
+        }
+    }
+    .inner-container {
+        justify-content:center !important;
+    }
+    .footer-list {
+        display:flex;
+        flex-direction:column;
+        li {
+            text-align:center;
+            width:100%;
+            margin:10px 0px;
+        }
+    }
+    footer {
+        height:80vh;
+        .inner-container {
+            height:70vh;
+        }
+        .icon-list {
+            margin-top:1rem;
+        }
+    }
+    .copyright {
+        text-align:center;
+        margin-top:0.5rem;
+    }
+    
+}

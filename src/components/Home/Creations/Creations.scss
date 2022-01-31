@@ -1,0 +1,65 @@
+@import '../../../var';
+
+.cr-square {
+    position:relative;
+    width:23%;
+    img {
+        object-fit: cover;
+        width:100%;
+    }
+    p {
+        position:absolute;
+        transition:all 400ms ease-in-out;
+        z-index:5;
+        color:white;
+        bottom:0;
+        font-size:2.3rem;
+        font-family:$fontJosef;
+        font-weight: 100;
+        line-height:45px;
+        text-transform: uppercase;
+        margin: 0px 2rem 2rem 2rem;
+    }
+    .cr-layer {
+        width:100%;
+        height:100%;
+        position:absolute;
+        background-color:rgba(0, 0, 0, 0.3);
+        transition:all 400ms ease-in-out;
+    }
+    .cr-layer:hover {
+        background-color:#ffffffba;
+        color:black;
+    }
+
+}
+
+
+.cr-square:hover {
+    cursor:pointer;
+    p {
+        color:black;
+    }
+    .cr-layer {
+        background-color:#ffffffba;
+        color:black;
+    }
+}
+
+@media only screen and (max-width: 1080px) {
+    .creation-container {
+        display:flex;
+        flex-direction:column;
+    }
+    .cr-square {
+        width:100%;
+        height:20vh;
+        img {
+            height:100%;
+        }
+        p {
+            margin: 0px 0rem 0rem 2rem;
+            font-size:1.9rem;
+        }
+    }
+}

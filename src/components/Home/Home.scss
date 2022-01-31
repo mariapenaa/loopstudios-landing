@@ -1,0 +1,141 @@
+@import '../../var';
+
+#section1 {
+    background-image:url(../../images/desktop/image-hero.jpg);
+    min-height:100vh;
+    background-repeat:no-repeat;
+    background-size:cover ;
+    position:relative;
+    .layer {
+        background-color:rgba(0, 0, 0, 0.28);
+        height:100vh;
+        width:100%;
+        position:absolute;
+        top:0;
+        z-index:2;
+        display:flex;
+        align-items: center;
+    }
+}
+
+
+.mainTitle {
+    margin-left:10vw;
+    font-family:$fontJosef;
+    font-weight: 100;
+    color:white;
+    font-size:5rem;
+    border:1px solid white;
+    width:45%;
+    line-height:79px;
+    padding:35px;
+    text-transform: uppercase;
+}
+
+.subtitle-square {
+    background-color:white;
+    position:absolute;
+    top:50%;
+    left:45%;
+    margin-left:0px;
+    padding:6rem;
+    width:50%;
+}
+
+.subtitle {
+    @extend .mainTitle;
+    color:black;
+    font-size:3.5rem;
+    width:100%;
+    padding:0px;
+}
+
+.text {
+    font-family:$fontJosef;
+    color:grey;
+}
+
+#section2 {
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    padding:0px 10vw;
+    position:relative;
+    img {
+        width:65%;
+    }
+}
+
+#section3 {
+    min-height:100vh;
+    padding:0px 10vw;
+
+}
+
+.button {
+    background-color:white;
+    border: solid 1px black !important;
+    border-radius: 0px !important;
+    width: 12%;
+    height: 5vh;
+    font-family:$fontJosef;
+    transition:all 400ms ease-in-out !important;
+    span {
+        font-family:$fontAlata !important;
+        font-size: 0.9rem;
+    }
+}
+
+.button:hover {
+    transition:background-color 1s ease-in-out;
+    background-color:black !important;
+    color:white !important;
+}
+
+@media only screen and (max-width: 1080px) {
+    #section2 {
+        display:flex;
+        justify-content:center;
+        flex-direction:column;
+        img {
+            width:100%
+        }
+    }
+
+    .subtitle-square {
+        position:relative;
+        top:auto;
+        left:auto;
+        width:100%;
+        padding:6rem 0rem;
+        p {
+            text-align:center;
+            width:100%;
+        }
+    }
+    #section3 {
+        .button {
+            display:none;
+        }
+        .subtitle {
+            text-align:center;
+        }
+        .creation-div {
+            justify-content: center !important;
+        }
+    }
+    .mainTitle {
+        font-size:3.5rem;
+        width:80%;
+        margin:0px 10vw;
+        line-height:65px;
+    }
+
+}
+
+@media only screen and (max-width: 545px) {
+    .mainTitle {
+        font-size:2rem;
+        line-height:40px;
+    }
+}
