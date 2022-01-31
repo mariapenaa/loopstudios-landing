@@ -1,4 +1,4 @@
-# 🖥Loopstudios landing page 
+# 🍉Loopstudios landing page 
 
 This is a solution to the [Loopstudios landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/loopstudios-landing-page-N88J5Onjw). It was built with React js, using mainly CSS and HTML, along with some JS. 
 ## Table of contents
@@ -18,7 +18,7 @@ Users should be able to:
 
 ### 📷Screenshot
 
-![](/public/proyect-screenshot.jpg)
+![](./public/proyect-screenshot.ong)
 
 ### 📌Links
 
