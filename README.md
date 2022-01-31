@@ -18,7 +18,7 @@ Users should be able to:
 
 ### 📷Screenshot
 
-![](./public/proyect-screenshot.ong)
+![](./public/proyect-screenshot.png)
 
 ### 📌Links
 
